@@ -44,7 +44,7 @@ export default function UserInfo() {
     <div className='flex flex-col w-full p-6 bg-slate-800 rounded-md'>
       {user ? (
         <>
-          <h2 className='text-[44px] mt-6'>Добро Пожаловать, {user.name}</h2>
+          <h2 className='text-2xl md:text-[44px] mt-6'>Добро Пожаловать, {user.name}</h2>
           <div>
             <p className='text-xl mt-8'>
               Ваше имя: <span className='font-bold'>{user.name}</span>

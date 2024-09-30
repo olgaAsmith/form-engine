@@ -47,7 +47,7 @@ export default function ListItems() {
   const memoizedItems = useMemo(() => items, [items]);
 
   return (
-    <div className='flex gap-12'>
+    <div className='flex gap-12 flex-col md:flex-row'>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className='flex flex-col gap-6 mt-6 p-4 border border-white w-full md:w-1/2 max-h-96'
