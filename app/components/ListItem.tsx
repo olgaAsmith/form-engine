@@ -25,7 +25,7 @@ const ListItem = memo(function ListItem({
         <>
           <h3 className='font-bold text-xl'>{item.title}</h3>
           <p className='italic text-sm'>{item.text}</p>
-          <div className='flex gap-6'>
+          <div className='flex gap-6 flex-col md:flex-row'>
             <Button type='button' onClick={onEdit}>
               Редактировать
             </Button>

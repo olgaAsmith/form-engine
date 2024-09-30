@@ -35,11 +35,11 @@ export default function FormEdit({ item, onCancel }: EditItemFormProps) {
         placeholder='Запись'
         defaultValue={item.text}
       />
-      <div className='flex justify-end gap-4'>
+      <div className='flex justify-end gap-4 flex-col md:flex-row'>
+        <Button type='submit'>Сохранить</Button>
         <Button type='button' onClick={onCancel}>
           Отмена
         </Button>
-        <Button type='submit'>Сохранить изменения</Button>
       </div>
     </form>
   );
